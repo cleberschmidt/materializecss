@@ -1,0 +1,1250 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/06/2015, 19:32:30
+    Author     : Cleber
+*/
+body{
+    background: #a1887f;
+}
+
+@font-face{
+    font-family: FARCEB__;
+    src: url(../fontes/FARCEB__.TTF);    
+}
+
+@font-face{
+    font-family: dpquake_;
+    src: url(../fontes/dpquake_.ttf);    
+}
+
+#iconeTeste{
+    width:50px;
+    height:50px;
+    position: absolute;
+    color:red;
+}
+
+#navMenu{
+    background: #3e2723;
+}
+
+#nav-mobile li:hover{
+    background: #5d4037;
+}
+
+.propaganda{
+    background: #eeeeee;
+    height:400px;
+    width:1100px;
+    position: absolute;
+    margin-left: -550px;
+    left:50%;
+    
+}
+
+.menuCentro{
+    width: 1100px;
+    position: absolute;
+    left:50%;
+    margin-left: -550px;
+}
+
+.boxPesquisa{    
+    width:280px;
+    height:40px;
+    position: absolute;
+    margin-left: 220px;
+    background: white;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+.boxPesquisaComInput{    
+    width:235px;
+    height:40px;
+    margin-left: 220px;
+    position: absolute;
+    top: 5px;
+    padding-left: 8px;
+    padding-right: 10px;
+    
+    
+}
+
+.pesquisa{   
+    color:black;   
+}
+
+#iconePesquisa{
+    position: absolute;
+    margin-left: 5px;
+    color:black;
+    cursor: pointer;
+}
+
+.conteudo{
+    height:2050px;
+    width:1100px;
+    position: absolute;
+    left:50%;
+    margin-left: -550px;
+    background: white;
+    top: 470px;
+}
+
+.conteudo2{
+    height:2050px;
+    width:1100px;
+    position: absolute;
+    left:50%;
+    margin-left: -550px;
+    background: white;
+    top: 300px;
+}
+
+.atendimentoPadrao{
+    height: 35px;
+    width:300px;
+    border-bottom:1px solid #bdbdbd;
+    cursor: pointer;
+}
+
+.atendimentoPadrao2{
+    height: 35px;
+    width:300px;
+    
+    cursor: pointer;
+}
+
+.troca_devolucao{
+    display:none;
+}
+
+.subtitulo_atendimento_magem_superior{
+    font-family:'Century Gothic', 'Apple Gothic', sans-serif;
+    color:#212121;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: -15px;
+}
+
+.loja_descricao_atendimento_sem_ponto{
+    margin-top: -15px;
+    color:#424242;
+    margin-left: 20px;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.subtitulo_atendimento{
+    font-family:'Century Gothic', 'Apple Gothic', sans-serif;
+    color:#212121;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.loja_descricao_atendimento_sem_ponto_margem_curta{
+    margin-top: -5px;
+    color:#424242;
+    margin-left: 20px;
+    text-align: justify;
+    margin-right: 20px;
+    
+}
+
+.atendimentoP{
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 10px;
+    color:#424242;
+    
+}
+
+.menuAtendimento{
+    height:287.5px;
+    width:300px;
+    border:1px solid #bdbdbd;
+    position: absolute;
+    left:0px;
+    top:0px;
+    background: #eeeeee;
+    border-radius: 5px;
+}
+
+.atendimentoLadoDireito{
+    border:1px solid #bdbdbd;
+    width: 790px;
+    background: white;
+    position: absolute;
+    right:0px;
+    top:0px;
+    height:1200px;
+    border-radius: 5px;
+}
+
+.conteudoIn{
+    height:1000px;
+    width:1100px;
+    position: absolute;
+    left:50%;
+    margin-left: -550px;
+    //background: white;
+    top: 95px;
+}
+
+.smart{
+    position: relative;
+    width:260px;
+    height:380px;
+    background: white;
+    float:left;
+    margin-left: 20px;
+    margin-top: 20px;
+    border:1px solid #bdbdbd;
+}
+
+.smart:hover{
+    border:1px solid #9e9e9e;
+    cursor: pointer;
+}
+
+.imagemSmart:hover{
+    opacity: 0.8;
+}
+
+.atendimentoTitulo{
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #b71c1c;
+    font-family:'Century Gothic', 'Apple Gothic', sans-serif;
+}
+
+.como_comprar{
+    display:none;
+}
+
+.loja_descricao{
+    margin-top: -15px;
+    color:#424242;
+    margin-left: 50px;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.ponto_atendimento{
+    color:#424242;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 30px;
+}
+
+.atendimentoTextoInicial{
+    text-align: justify;
+    margin-top: -15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.atendimentoSubtitulo{
+    font-family:'Century Gothic', 'Apple Gothic', sans-serif;
+    color:#212121;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.produtosDireita{
+    position: absolute;
+    margin-left: 230px;   
+    width:870px;
+    height:2050px;
+}
+
+.produtosEsquerda{
+    position: absolute;
+    width:870px;
+    height:2050px;
+}
+
+.propagandaDireita{
+    position: absolute;
+    right:0px;
+    width:227px;
+    height:2050px;
+    
+}
+
+.imgPropagandaN{
+    width:100%;
+    height:225px;
+   
+}
+
+.rodape{
+    height:700px;
+    width:100%;
+    background-image: linear-gradient(to top, #a1887f, #3e2723);
+    position: absolute;
+    top: 2550px;
+}
+
+.rodape01{
+    margin-top: 200px;
+    width:100%;
+    height:400px;
+    background: white;
+}
+
+.rodapeq{
+    height:700px;
+    width:100%;
+    background-image: linear-gradient(to top, #a1887f, #3e2723);
+    position: absolute;
+    top: 2380px;
+}
+
+.rodapevendas{
+    height:700px;
+    width:100%;
+    background-image: linear-gradient(to top, #a1887f, #3e2723);
+    position: absolute;
+    top: 1180px;
+}
+
+#brand{
+ font-family: FARCEB__;   
+}
+
+.rodapeq2{
+    height:700px;
+    width:100%;
+    background-image: linear-gradient(to top, #a1887f, #3e2723);
+    position: absolute;
+    top: 1330px;
+}
+
+.rodape_fin{
+    text-align: center;
+}
+
+#rodape_font_padrao_titulo{
+    color:black;
+    font-size: 1.3rem;
+    font-family: cursive;
+    margin-left: 5px;
+}
+
+.rodape_duvida_link{
+    color:grey;
+    margin-top: -10px;
+    margin-left: 15px;
+    font-family:sans-serif;
+    cursor: pointer;
+}
+
+
+.centralizar_fin{
+    width:1100px;
+    position: absolute;
+    left:50%;
+    margin-left: -550px;
+    font-size: 0.9rem;
+}
+
+.centralizar_ate{
+    width:1100px;
+    position: absolute;
+    top:-400px;
+    left:50%;
+    height:400px;
+    //border:1px solid red;
+    margin-left: -550px;
+    font-size: 0.9rem;
+}
+
+.rodapeAtendimento{
+    margin-top: 15px;
+    width:300px;
+    height:350px;
+    //border:1px solid black;
+}
+
+.houseFone{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #1a237e;
+    position: absolute;
+    top: 70px;
+    margin-left: 83px;
+}
+
+.tituloFace{
+    position: absolute;
+    top:80px;
+    font-size: 0.8rem;
+    color: #212121;
+    margin-left: 30px;
+    font-family: FARCEB__;
+}
+.tituloFace2{
+    position: absolute;
+    margin-left: 35px;
+    top:100px;
+    font-size: 0.8rem;
+    color: #212121;
+    font-family: FARCEB__;
+}
+
+
+
+
+.imgFormaPagamento{
+    margin-left: -15px;
+    width:390px;
+}
+
+.imgFace{
+    margin-left: 15px;
+}
+
+.maisAcessados{
+    width: 450px;
+    height:200px;
+    margin-top: 0px;
+    position: absolute;
+    margin-left: 383px;
+    //border: 1px solid red;
+}
+
+.receber_oferta{
+    width: 285px;
+    height:200px;
+    margin-top: 0px;
+    position: absolute;
+    margin-left: 813px;
+    //border: 1px solid red;    
+}
+
+.labelTexto{
+    color: #616161;
+}
+
+.skype_p{
+   font-size: 0.9rem;
+   margin-left: 40px;
+   color:#e0e0e0;
+   
+}
+
+.inputVenda{
+    border: 1px solid #bdbdbd;
+    height:30px;
+    width:300px;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.inputVendaPadrao{
+    position: absolute;
+    top:26px;
+}
+
+.inputVendam{
+    border: 1px solid #bdbdbd;
+    height:110px;
+    width:300px;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.inputVendaPadraoe{
+    position: absolute;
+    top:110px;    
+}
+
+.vendasOnlineCima{
+    background: #757575;
+    border-left: 1px solid #616161;
+    border-right: 1px solid #616161;
+    border-top: 1px solid #616161;
+    width:250px;
+    height:50px;
+    position: absolute;
+    top:-51px;
+    left:0px;
+}
+
+#enviarBTN{
+    background: #3e2723;
+    float: right;
+    margin-right: -9px;
+}
+
+.inputVendaPadraoa{
+    position: absolute;
+    top:194px;    
+}
+
+.inputVendaPadraom{
+    position: absolute;
+    top:290px;    
+}
+
+.conteudoVendasDireito{
+    width:300px;
+    height:500px;
+    //border: 1px solid black;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 580px;
+}
+
+.horarioAtendimento{
+    font-size: 0.85rem;
+    color: #b71c1c;
+    font-weight: bold;
+    margin-top: 287px;
+    
+}
+
+
+.conteudoCadastro{
+    height:1000px;
+    width:1100px;
+    position: absolute;
+    left:50%;
+    margin-left: -550px;
+    background: white;
+    top: 95px;
+}
+
+.caixaIdentificacao{
+    width:650px;
+    height:150px;
+    background: #e0e0e0;
+    border: 1px solid #bdbdbd;
+    margin-top: 25px;
+    position: absolute;
+    left:50%;
+    margin-left:-325px;
+}
+
+.caixaIdentificaçãoEsquerda{
+    width:323px;
+    height:270px;
+    background: #e0e0e0;
+    border: 1px solid #bdbdbd;
+    margin-top: 179.5px;
+    position: absolute;
+    left:50%;
+    margin-left:-325px;
+}
+
+.nao_cadastro{
+color:gray;
+font-weight: bolder;
+margin-left:3%;
+
+}
+
+#tamanho_fonte{
+font-size: 0.9em;
+margin-bottom: 1%;
+margin-left:3%;
+}
+
+
+
+#botao_cadastrar{
+position:absolute;
+top:230px;
+left:205px;
+padding-left: 22px;
+
+width:50px;
+height:30px;
+line-height: 30px;
+font-size: 0.6rem;
+font-family: sans-serif;
+background: #3e2723;
+}
+
+.foneVendasOnline{
+    font-size:  0.85rem;
+    margin-top: -15px;
+}
+
+.rodapel{
+    height:700px;
+    width:100%;
+    background-image: linear-gradient(to top, #a1887f, #3e2723);
+    position: absolute;
+    top: 1200px;
+}
+
+#botao_cadastrar2{
+position:absolute;
+top:230px;
+left:205px;
+text-align: center;
+width:50px;
+height:30px;
+line-height: 30px;
+font-size: 0.6rem;
+font-family: sans-serif;
+background: #3e2723;
+}
+
+#esqueci_senha{
+    font-size:0.8rem;
+    color:#424242;
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: 10px;
+    
+}
+
+.tituloIdentificacao{
+    font-size:2rem;
+    font-family: arial;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #212121;
+    font-weight: bold;
+}
+
+.bemVindoaHouse{
+    color: #424242;
+    font-size: 0.85rem;
+    margin-top: -30px;
+    margin-left: 20px;
+}
+
+.caixaIdentificaçãoDireita{
+    width:323px;
+    height:270px;
+    background: #e0e0e0;
+    border: 1px solid #bdbdbd;
+    margin-top: 179.5px;
+    position: absolute;
+    left:50%;
+    margin-left:2px;    
+}
+
+
+.menuCentro{
+    width: 1100px;
+    position: absolute;
+    left:50%;
+    margin-left: -550px;
+}
+
+
+.segunda{
+    font-size: 0.8rem;
+    margin-top: -14px;
+    font-style: italic;
+}
+
+.vendasOnlineCaixa{
+    width:300px;
+    height:500px;
+    //border: 1px solid black;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+.conteudoVendasOnline{
+    height:1000px;
+    width:1100px;
+    position: absolute;
+    left:50%;
+    margin-left: -550px;
+    background: white;
+    top: 145px;
+}
+
+#skype{
+    height:30px;
+    width:30px;
+    position:absolute;
+    margin-top: 9px;
+    right: 250px;
+    cursor: pointer
+}
+
+.skype_p_venda{
+    margin-top: 5px;
+    margin-left: 10px; 
+    font-size: 0.85rem;
+    color:grey;
+}
+
+#email2{
+  border-bottom:1px solid #bdbdbd;
+    width:300px;
+    margin-left: 10px;
+    margin-top: -5px; 
+}
+
+.skype_p_caixa{
+    position: absolute;
+    right:0px;
+    top:120px;
+    background: white;
+    height:30px;
+    width:200px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px white;
+    display:none;
+}
+
+
+#inputR{
+    width: 240px;
+    height: 30px;
+    background: white;
+    color:grey;
+    margin-top: -5px;
+    padding-left: 5px;
+    padding-right: 40px;
+}
+
+.propaganda img{
+    width:1100px;
+    height: 100%;
+}
+
+.receber_oferta_input_p{
+    margin-left: 5px;
+    font-family:dpquake_ ;
+    font-size: 1.3rem;
+}
+
+.receber_oferta_i{
+    position: absolute;
+    top: 52px;
+    right:32px;
+}
+
+.receber_oferta_i i{
+cursor:pointer;
+position:absolute;
+font-size:36px;
+color:#212121;    
+}
+
+
+.receber_oferta_input_p{
+    margin-left: 5px;
+    font-family:dpquake_ ;
+    font-size: 1.3rem;
+    color:white;
+}
+
+.rodape_todos_departamentos_link{
+    color:#e0e0e0;
+    margin-top: -10px;
+    margin-left: 15px;
+    font-family:sans-serif;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+
+.centralizar_tud{
+    width:1100px;
+    position: absolute;
+    top:0px;
+    left:50%;
+    height:200px;
+    //border:1px solid red;
+    margin-left: -550px;
+    
+}
+
+.TodosDepartamentos{
+    width: 300px;
+    height:200px;
+    margin-top: 0px;
+    position: absolute;
+    //border: 1px solid red;
+}
+
+.redeSocial{
+    width:372px;
+    height:350px;
+    position: absolute;
+    //border:1px solid red;
+    margin-left: 726px;
+    top:15px;
+}
+
+.formaPagamento{
+    width:420px;
+    height:350px;
+    position: absolute;
+    //border:1px solid red;
+    margin-left: 303px;
+    top:15px;
+}
+
+.tituloP{
+    background: #757575;
+    border-left: 1px solid #616161;
+    border-right: 1px solid #616161;
+    border-top: 1px solid #616161;
+    width:250px;
+    height:50px;
+    position: absolute;
+    top:-51px;
+    left:0px;
+}
+
+.rodape02{
+    position: absolute;
+    margin-top: 400px;
+    width:100%;
+    height:100px;
+    background: #e0e0e0;
+}
+
+.oQueEsmart{
+    color:gray;
+    font-size: 0.9rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: justify
+}
+
+.oQueEsmart2{
+    display: none;
+    color:gray;
+    font-size: 0.9rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: justify
+}
+
+.leiaMais{
+    position: absolute;
+    right:20px;
+    top:70px;
+    color:#b71c1c;
+    font-size: 0.9rem;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.smartP{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 8px;
+}
+
+.smartQual{
+    width:1100px;
+    height:120px;
+    background: white;
+    position: absolute;
+    margin-left: -550px;
+    left:50%;
+    top:145px;
+}
+
+.imgPropagandaN:hover{
+    opacity: 0.8;
+}
+
+.imgLanc:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.imgPropagandaN2{
+    width:100%;
+    height:200px;
+    cursor: pointer;
+   
+}
+
+.imgPropagandaN2:hover{
+    opacity: 0.8;
+}
+
+.propaganda01:hover{
+    border: 1px solid #9e9e9e;  
+    cursor: pointer;
+}
+
+.propaganda01{
+    border: 1px solid #bdbdbd;
+    width: 205px;
+    height:280px;
+    margin-right: 20px;
+    margin-top: 20px;    
+}
+
+.propaganda05{
+    border: 1px solid #bdbdbd;
+    width: 205px;
+     height:125px;
+    margin-right: 20px;
+    margin-top: 20px;    
+}
+
+.propaganda04{
+    border: 1px solid #bdbdbd;
+    width: 205px;
+    height:380px;
+    margin-right: 20px;
+    margin-top: 20px;    
+}
+
+.propaganda03{
+    border: 1px solid #bdbdbd;
+    width: 205px;
+    height:125px;
+    margin-right: 20px;
+    margin-top: 20px;    
+}
+
+.valorLanc{
+    text-align: center;
+    font-size: 1.3rem;
+    color:#2e7d32;
+    margin-top: -8px;
+}
+
+.faixaFrete{
+    height:125px;
+    width: 207px;
+    margin-left: -1px;
+    background: #3e2723 ;
+}
+
+.gratis{
+    position: absolute;
+    font-weight: bold;
+    color:white;
+    font-style: italic;
+    margin-left: 80px;
+    margin-top: 33px;
+    font-family: monospace;
+    font-size: 1.6rem;
+}
+
+.freteGratis{
+    position: absolute;
+    color:white;
+    font-style: italic;
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.imgLanc{
+    width:170px;
+    height:170px;
+    margin-left: 17.5px;
+    margin-top: 10px;
+}
+
+.aproveite{
+    font-size: 0.75rem;
+    text-align: center;
+    font-family: cursive;
+    margin-top: -26px;
+   
+}
+
+#iconeCaminhao{
+    font-size: 40px;
+    color:white;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 35px;
+    
+    
+}
+
+.ultimoLancamento{
+    font-family: Mistral;
+    font-size: 1.4rem;
+    color:#c62828;
+    text-align: center;
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+.faixaHora{
+    margin-top: -17px;
+    background: #424242;
+    height:40px;
+    width: 207px;
+    margin-left: -1px;
+}
+
+.faixaMarrom{
+    background: #3e2723;
+    height:125px;
+    width: 207px;
+    margin-left: -1px;
+    position: absolute;
+}
+
+.compreTelefone{
+    font-weight: bold;
+    color:white;
+    font-family: arial;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-left: 75px;
+}
+
+.compreTelefone2{
+    font-weight: bold;
+    color:white;
+    font-family: arial;
+    font-size: 1.45rem;
+    margin-top: -20px;
+    margin-left: 75px;
+}
+
+.numeroDeTelefone{
+    font-weight: bold;
+    color: #3e2723;
+    font-size: 1.3rem;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.faixaBranca{
+    background: white;
+    width:201px;
+    border-radius: 3px;
+    height:40px;
+    margin-top: -10px;
+    margin-left: 3px;
+}
+
+#iconeTelefone{
+    font-size: 35px;
+    color:white;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+.de{
+    text-decoration: line-through;
+    color:#b71c1c;
+    text-align: center;
+    font-style: italic;
+}
+
+.por{
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color:#2e7d32;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.horaCorrendo{
+    text-align: center;
+    color:white;
+    font-size: 1.3rem;
+    padding-top: 5px;
+}
+
+.ofertaDoDia{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 2rem;
+    font-style: italic;
+    font-family: Monotype Corsiva;
+}
+
+#btnComprar{
+    background: #388e3c;
+    margin-left: 35px;
+}
+
+.tituloProduto{
+    text-align: center;
+    
+}
+
+.corraPoisAcaba{
+    font-size: 0.7rem;
+    position: absolute;
+    margin-top: -32px;
+    margin-left: 52px;
+    color:gray;
+}
+
+.propaganda02{
+    border: 1px solid #bdbdbd;
+    width: 205px;
+    height:520px;
+    margin-right: 20px;
+    margin-top: 20px;    
+}
+
+.textoPropaganda{
+    font-family: FARCEB__;
+    color: #e57373;
+    margin-top: -15PX;
+    text-align: center;
+}
+
+.textoPropaganda0{
+    margin-top: -5PX;
+    text-align: center; 
+    font-weight: bold;
+}
+
+.filtroSmart{
+    position: absolute;
+    left:0px;   
+    width:227px;
+    height:2200px;
+}
+
+.imagemSmart{
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.smartTitulo{
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.smartTitulo0{
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.smartValor{
+    
+    color:red;
+    margin-top: -2px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.smartNoCartao{
+    text-align: center;
+    margin-top: -25px;
+    color:#757575;
+    font-size: 0.8rem;
+}
+
+.smartNoBoleto{
+    text-align: center;
+    margin-top: -13px;
+    color:#757575;
+    font-size: 0.8rem;
+}
+
+.filtroCategoria{
+    border: 1px solid #bdbdbd;
+    width: 205px;
+    height:170px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.filtroMarcas{
+    border: 1px solid #bdbdbd;
+    width: 205px;
+    height:305px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.filtroRede{
+    border: 1px solid #bdbdbd;
+    width: 205px;
+    height:145px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.validoPara{
+    color:white;
+    font-family: Monotype Corsiva;
+    position: absolute;
+    margin-top: 70px;
+    margin-left:38px;
+    font-size: 1.3rem;
+}
+
+.validoPara2{
+    color:white;
+    font-family: Monotype Corsiva;
+    position: absolute;
+    margin-top: 90px;
+    margin-left:55.5px;
+    font-size: 1.3rem;
+}
+
+.filtroBoxTitulo{
+    height: 30px;
+    width:100%;
+    background: #eceff1;
+    border-bottom:1px solid #bdbdbd;
+}
+
+#iconeFiltro{
+    font-size: 22px;
+    color: #757575;
+    margin-left: 10px;
+}
+
+.filtroTitulo{
+    color: #616161;
+    margin-top: -28px;
+    margin-left: 38px;
+    font-family: Calibri;
+    font-weight: 500;
+}
+
+.labelFiltro{
+    color: #616161;
+    margin-right: 25px;
+}
+
+.checkboxFiltro{
+    margin-top: 15px;
+    margin-left: -35px;
+}
+
+ 
+
+
+

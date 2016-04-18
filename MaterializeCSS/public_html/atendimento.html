@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <link rel="styleSheet" href="Estilo/cssPadrao.css" />
+        <link rel="icon" type="image/png" href="imagens/celu.ico" />
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    </head>
+
+    <body>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        
+        <script>
+            var documento = 1;
+            $(document).ready(function(){
+                $(".leiaMais").click(function (){
+                    if(documento == 1){
+                        $(".smartQual").css("height","170px");
+                        $(".conteudo2").css("top","350px");
+                        $(".oQueEsmart2").css("display","block");
+                        $(".leiaMais").text("Recolher");
+                        $(".leiaMais").css("top","120px");
+                        $(".rodapeq").css("top","2430px");
+                        documento = 2;
+                    }else if(documento == 2){
+                        $(".smartQual").css("height","120px");
+                        $(".conteudo2").css("top","300px");
+                        $(".oQueEsmart2").css("display","none");
+                        $(".leiaMais").text("Leia mais");
+                        $(".leiaMais").css("top","70px");
+                        $(".rodapeq").css("top","2380px");
+                        documento = 1;
+                    }
+                }); 
+                
+                $("#como_comprar").click(function(){ 
+        $(".como_comprar").fadeToggle("slow");
+        $(".como_pagar").css("display","none");
+        $(".troca_devolucao").css("display","none");
+        $(".politica_entrega").css("display","none");
+        $(".empresa").css("display","none");
+        $(".duvida").css("display","none");
+    }); 
+    $("#como_pagar").click(function(){ 
+        $(".como_pagar").fadeToggle("slow");
+        $(".como_comprar").css("display","none");
+        $(".troca_devolucao").css("display","none");
+        $(".politica_entrega").css("display","none");
+        $(".empresa").css("display","none");
+        $(".duvida").css("display","none");
+    });
+    $("#troca_devolucao").click(function(){ 
+        $(".troca_devolucao").fadeToggle("slow");
+        $(".como_comprar").css("display","none");
+        $(".como_pagar").css("display","none");
+        $(".politica_entrega").css("display","none");
+        $(".empresa").css("display","none");
+        $(".duvida").css("display","none");
+    });
+    $("#politica_entrega").click(function(){ 
+        $(".politica_entrega").fadeToggle("slow");
+        $(".como_comprar").css("display","none");
+        $(".como_pagar").css("display","none");
+        $(".troca_devolucao").css("display","none");
+        $(".empresa").css("display","none");
+        $(".duvida").css("display","none");
+    });
+    
+    $("#empresa").click(function(){ 
+        $(".empresa").fadeToggle("slow");
+        $(".politica_entrega").css("display","none");
+        $(".como_comprar").css("display","none");
+        $(".como_pagar").css("display","none");
+        $(".troca_devolucao").css("display","none");
+        $(".duvida").css("display","none");
+    });
+    
+    $("#duvida").click(function(){ 
+        $(".duvida").fadeToggle("slow");
+        $(".empresa").css("display","none");
+        $(".politica_entrega").css("display","none");
+        $(".como_comprar").css("display","none");
+        $(".como_pagar").css("display","none");
+        $(".troca_devolucao").css("display","none");
+    });
+    
+    $("#codigo_defesa").click(function(){ 
+        window.open("http://www.planalto.gov.br/ccivil_03/LEIS/L8078.htm");
+        $(".politica_entrega").css("display","none");
+        $(".como_comprar").css("display","none");
+        $(".como_pagar").css("display","none");
+        $(".troca_devolucao").css("display","none");
+        $(".empresa").css("display","none");
+        $(".duvida").css("display","none");
+    });
+    
+    $("#venda_online").click(function(){ 
+        window.open("vendasOnline.html");
+        $(".politica_entrega").css("display","none");
+        $(".como_comprar").css("display","none");
+        $(".como_pagar").css("display","none");
+        $(".troca_devolucao").css("display","none");
+        $(".empresa").css("display","none");
+        $(".duvida").css("display","none");
+    });
+    
+     
+                $("#skype").mouseover(function(){
+                    $(".skype_p_caixa").fadeIn("slow");
+                });
+                $("#skype").mouseout(function(){
+                    $(".skype_p_caixa").fadeOut("fast");
+                });
+            
+    
+            });
+         
+        </script>
+        
+        <nav>
+            <div id="navMenu" class="nav-wrapper">
+                <div class="menuCentro">
+                    <a href="index.html" id="brand" class="brand-logo">HOUSE FONE</a>
+                    <div class="boxPesquisa"></div>
+                    <div class="boxPesquisaComInput">
+                        <input class="pesquisa" type="text"><i id="iconePesquisa" class="mdi-action-search"></i>
+                    </div>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="smartphone.html">SMARTPHONES</a></li>
+                        <li><a href="smartphone.html">CELULARES</a></li>
+                        <li><a href="smartphone.html">ACESSÓRIOS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+         
+        <div class="conteudoIn">
+            <div class="menuAtendimento">
+                <div class="atendimentoPadrao">
+                    <p class="atendimentoP" id="como_comprar">Como Comprar</p>
+                </div>
+                <div class="atendimentoPadrao">
+                    <p class="atendimentoP">Como Pagar</p>
+                </div>
+                <div class="atendimentoPadrao">
+                    <p class="atendimentoP" id="troca_devolucao">Trocas e Devoluções</p>
+                </div>
+                <div class="atendimentoPadrao">
+                    <p class="atendimentoP" id="codigo_defesa">Código de Defesa do Consumidor</p>
+                </div>
+                <div class="atendimentoPadrao">
+                    <p class="atendimentoP">Dúvidas</p>
+                </div>
+                <div class="atendimentoPadrao">
+                    <p class="atendimentoP" id="venda_online">Vendas Online</p>
+                </div>
+                <div class="atendimentoPadrao">
+                    <p class="atendimentoP">Políticas de Entrega</p>
+                </div>
+                <div class="atendimentoPadrao2">
+                    <p class="atendimentoP">A Empresa</p>
+                </div>
+            </div>
+            
+            <div class="atendimentoLadoDireito">
+                <div class="como_comprar">
+                    <p class="atendimentoTitulo">Como Comprar</p>
+                    <p class="atendimentoTextoInicial">A empresa House Fone possui um design intuitivo e agradável, proporcionando agilidade e rapidez na navegabilidade. Tudo para oferecer uma melhor experiência a você cliente.</p>
+                    <p class="atendimentoSubtitulo">1. Escolher o produto</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Pela BUSCA por produtos, este campo permite encontrar o produto em qualquer local do site, conforme a palavra digitada.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Pela vitrine, sendo possível visualizar todos os produtos disponíveis.</p>
+
+                    <p class="atendimentoSubtitulo">2. Detalhes do produto</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Após clicar em qualquer produto da vitrine, você vai ter acesso a todas as informações sobre aquele produto.</p>
+
+                    <p class="atendimentoSubtitulo">3. Colocar o produto no carrinho de compras</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Para adicionar os produtos ao carrinho de compra, é só clicar em COMPRAR.</p>
+
+                    <p class="atendimentoSubtitulo">4. Carrinho de Compras</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Escolha a quantidade de cada produto.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Coloque o CEP  para ser informado sobre o valor do frete e o tipo de entrega.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Com a inclusão do CEP o valor final do pedido, estará sendo informado.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">É possível adicionar mais produtos clicando em CONTINUAR COMPRANDO.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Caso queira finalizar seu pedido, clique em PRÓXIMO PASSO.</p>
+
+                    <p class="atendimentoSubtitulo">5. Identificação de cliente</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Para compras no site é necessário o cadastro, todas as informações serão guardadas de<br> forma segura.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Caso já possua cadastro, insira o e-mail e a senha e clique em ENTRAR.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Caso ainda não esteja cadastrado, adicione seu e-mail e clique em CADASTRAR.</p>
+
+                    <p class="atendimentoSubtitulo">6. Confirmar dados</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Caso queira modificar seus dados cadastrais ou dados do endereço de entrega, clique em ALTERAR, Senão clique em CONTINUAR.</p>
+
+                    <p class="atendimentoSubtitulo">7. Forma de pagamento</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Selecione a forma de pagamento e clique em CONTINUAR.</p>
+
+                    <p class="atendimentoSubtitulo">8. Finalizar Compra</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Confira os itens incluídos no seu pedido.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Caso queira validar sua compra, clique em FINALIZAR COMPRA.</p>
+                </div>
+                
+                 <div class="troca_devolucao">
+                    <p class="atendimentoTitulo">Trocas e Devoluções</p>
+                    <p class="subtitulo_atendimento_magem_superior">Garantia</p>
+                    <p class="loja_descricao_atendimento_sem_ponto">A empresa House Fone assegura garantia contra defeitos de fabricação, de todos os produtos adquiridos na empresa. Sendo que no site, todos os produtos possuem o período de cobertura da garantia informado. </p>
+
+                    <p class="subtitulo_atendimento">A garantia não contempla</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Produtos não adquiridos na House Fone.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Defeito ocasionado por uso indevido.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Defeito causado por agentes da natureza.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Qualquer outro defeito que não seja caracterizado como defeito de fabricação.</p>
+
+                    <p class="subtitulo_atendimento">Trocas e Devoluções</p>
+                    <p class="loja_descricao_atendimento_sem_ponto">A mercadoria deverá retornar nas mesmas condições em que foi lhe foi entregue, com a embalagem original e seus itens em perfeitas condições, a caixa do produto não deve estar danificada.</p>
+                    <p class="subtitulo_atendimento">A mercadoria só pode retornar perante as seguintes situações:</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Produto avariado (não contempla mau uso).</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Produto em desacordo com o pedido.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Desistência da compra – permitido até 7 dias após a entrega do pedido. (A devolução por arrependimento só será aceita, se a mercadoria estiver nas mesmas condições em que foi lhe entregue).</p>
+
+                    <p class="subtitulo_atendimento">1. Produto avariado</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">O cliente deverá ficar atento no ato da entrega, recusando imediatamente o produto ou a embalagem que estiver sido avariada no transporte, devendo então entrar em contato pelo e-mail vendas@housefone.com.br, no prazo máximo de 24 (vinte e quatro) horas para acionar a Garantia.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Condições: caso for constatado indícios de mau uso, a empresa fica isenta de fazer a devolução e fazer a troca, podendo reenviar o produto ao cliente sem prévia consulta.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Depois de analisado as condições do produto devolvido e confirmado que o mesmo se encontra em perfeitas condições. Será devolvido ao cliente um produto igual ao adquirido na compra. Se o cliente preferir pode receber a devolução do dinheiro.</p>
+
+                    <p class="subtitulo_atendimento">2. Produto em desacordo com o pedido</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Caso o cliente perceber no ato da entrega que o produto encomendado não é o mesmo que está sendo entregue, ele deverá recusar a mercadoria prontamente. Caso só seja percebido depois, o prazo para entrar em contato é de 24 (vinte e quatro) horas.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Pedidos fora desse prazo não serão aceitos, pois será considerado que o consumidor aceitou o produto enviado.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Depois de analisado as condições do produto devolvido e confirmado que o mesmo se encontra em perfeitas condições. Será devolvido ao cliente um novo produto.</p>
+
+                    <p class="subtitulo_atendimento">3. Desistência da compra</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Caso você receba a mercadoria e opte por desistir da compra, você tem o direito de devolvê-la e receber a restituição do valor de seu pedido, conforme Art. 49 do Código de Defesa do Consumidor.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">Considerando que o prazo para desistência da compra é de 7 dias, após a entrega do pedido. Caso for constatado que o cliente não cumpriu com as condições de devolução, o produto vai ser devolvido ao cliente sem prévia consulta, por frete a cobrar.</p>
+                    <p class="ponto_atendimento">&nbsp;&bull;</p><p class="loja_descricao">O pedido só será cancelado caso o produto esteja em sua embalagem original, sem indícios de uso, acompanhado de nota fiscal.</p>
+
+                </div>
+            </div>
+        </div>
+        
+        <footer class="rodapeq2">
+            <div class="rodape01">
+                <div class="centralizar_tud">
+                    <div class="TodosDepartamentos">
+                        <p class="receber_oferta_input_p">Todos os Departamentos</p>
+                        <p class="rodape_todos_departamentos_link" id="gamesRodape">&nbsp;&bull; Smartphones</p>
+                        <p class="rodape_todos_departamentos_link" id="lancamentosRodape">&nbsp;&bull; Celulares</p>
+                        <p class="rodape_todos_departamentos_link" id="ColecionaveisRodpe">&nbsp;&bull; Acessórios</p>
+                        
+                    </div>
+                    
+                    <div class="maisAcessados">
+                        <p class="receber_oferta_input_p">Mais Acessados</p>
+                        <p class="rodape_todos_departamentos_link">&nbsp;&bull; LG G3 Stylus D690 Preto</p>
+                        <p class="rodape_todos_departamentos_link">&nbsp;&bull; LG G4 H815P Titânio</p>
+                        <p class="rodape_todos_departamentos_link">&nbsp;&bull; Nokia Lumia 730 Dual Sim Preto</p>
+                        <p class="rodape_todos_departamentos_link">&nbsp;&bull; Microsoft Lumia 535 Dual Branco</p>
+                    </div>
+                    
+                    <div class="receber_oferta">
+                        <p class="receber_oferta_input_p">Receba Ofertas</p>
+                        <input name="receber_email" id="inputR" type="text" placeholder="e-mail" maxlength="60">
+                        <div class="receber_oferta_i"><i class="mdi-content-add-box"></i></div>
+                        <img id="skype" src="imagens/skype.png">
+                        <p class="skype_p">Skype</p>
+                        <div class="skype_p_caixa">
+                             <p class="skype_p_venda">vendas@housefone.com.br</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rodape02">
+                    <div class="centralizar_ate">
+                        <div class="rodapeAtendimento">
+                            <p id="rodape_font_padrao_titulo">Atendimento</p>
+                            <p class="rodape_duvida_link" id="comoComparRodape">&nbsp;&bull; Como Comprar</p>
+                            <p class="rodape_duvida_link" id="comoPagarRodape">&nbsp;&bull; Como Pagar</p>
+                            <p class="rodape_duvida_link" id="trocasDevolucoesRodape">&nbsp;&bull; Trocas e Devoluções</p>
+                            <p class="rodape_duvida_link" id="codigoDefesaConsumidorRodape">&nbsp;&bull; Código de Defesa do Consumidor</p>
+                            <p class="rodape_duvida_link" id="duvidasRodape">&nbsp;&bull; Dúvidas</p>
+                            <p class="rodape_duvida_link" id="vendasOnlineRodape">&nbsp;&bull; Vendas Online</p>
+                            <p class="rodape_duvida_link" id="politicasEntregaRodape">&nbsp;&bull; Políticas de Entrega</p>
+
+                            <p id="rodape_font_padrao_titulo">Institucional</p>
+                            <p class="rodape_duvida_link" id="empresaRodape">&nbsp;&bull; A Empresa</p>
+                        </div>
+                        <div class="formaPagamento">
+                            <p id="rodape_font_padrao_titulo">Formas de Pagamento</p>
+                            <img class="imgFormaPagamento" src="imagens/cartao.jpg">
+                        </div>
+                        
+                        <div class="redeSocial">
+                            <p id="rodape_font_padrao_titulo">Curta a Nossa Página</p>
+                            <p class="tituloFace">HOUSE</p>
+                            <p class="tituloFace2">FONE</p>
+                            <p class="houseFone">House Fone</p>
+                            <img class="imgFace" src="imagens/face.png">
+                        </div>
+                    </div>
+                    <div class="centralizar_fin">
+                        <p class="rodape_fin">HOUSE FONE / CNPJ: 07.339.047/0001-70 / Inscrição Estadual: 254.960.080 Endereço: Alameda Aristiliano Ramos, 271 - Rio do Sul, SC - 89160-000. O preço válido será o da finalização da compra. Vendas sujeitas a análise e confirmação de dados pela empresa. Atendimento ao cliente: atendimento@housefone.com.br</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+      
+    </body>
+</html>
+       

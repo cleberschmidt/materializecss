@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <link rel="styleSheet" href="Estilo/cssPadrao.css" />
+        <link rel="icon" type="image/png" href="imagens/celu.ico" />
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    </head>
+
+    <body>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        
+        <script>
+            var documento = 1;
+            $(document).ready(function(){
+               $(".leiaMais").click(function (){
+                   if(documento == 1){
+                       $(".smartQual").css("height","170px");
+                       $(".conteudo2").css("top","350px");
+                       $(".oQueEsmart2").css("display","block");
+                       $(".leiaMais").text("Recolher");
+                       $(".leiaMais").css("top","120px");
+                       $(".rodapeq").css("top","2430px");
+                       documento = 2;
+                    }else if(documento == 2){
+                        $(".smartQual").css("height","120px");
+                        $(".conteudo2").css("top","300px");
+                        $(".oQueEsmart2").css("display","none");
+                        $(".leiaMais").text("Leia mais");
+                        $(".leiaMais").css("top","70px");
+                        $(".rodapeq").css("top","2380px");
+                        documento = 1;
+                    }
+               }); 
+               
+             
+                $("#skype").mouseover(function(){
+                    $(".skype_p_caixa").fadeIn("slow");
+                });
+                $("#skype").mouseout(function(){
+                    $(".skype_p_caixa").fadeOut("fast");
+                });
+            
+        
+            });
+         
+        </script>
+        
+        <nav>
+            <div id="navMenu" class="nav-wrapper">
+                <div class="menuCentro">
+                    <a href="index.html" id="brand" class="brand-logo">HOUSE FONE</a>
+                    <div class="boxPesquisa"></div>
+                    <div class="boxPesquisaComInput">
+                        <input class="pesquisa" type="text"><i id="iconePesquisa" class="mdi-action-search"></i>
+                    </div>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="smartphone.html">SMARTPHONES</a></li>
+                        <li><a href="smartphone.html">CELULARES</a></li>
+                        <li><a href="smartphone.html">ACESSÓRIOS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+         
+        <div class="smartQual">
+            <div class="tituloP">
+                <p class="smartP">SMARTPHONES</p>
+            </div>
+            <p class="oQueEsmart">Os smartphones são híbridos entre celulares e computadores. Não têm o hardware potente de um PC, mas também não são tão simples quanto um telefone. Afinal, eles englobam algumas das principais tecnologias de comunicação em somente um local: internet, GPS, e-mail, SMS, mensageiro instantâneo e aplicativos para muitos fins. Para muitos, é como ter o mundo ao alcance de um simples toque.</p>
+            <p class="oQueEsmart2">A principal razão para se comprar um smartphone é justamente a sua polivalência. Ele serve para tanta coisa que com certeza vai facilitar alguma coisa da sua vida. Afinal, hoje em dia nem mesmo o preço é uma barreira. </p>
+            <p class="leiaMais">Leia mais</p>
+        </div>
+        <div class="conteudo2">
+            <div class="filtroSmart">
+                <div class="filtroCategoria">
+                    <div class="filtroBoxTitulo">
+                        <i id="iconeFiltro" class="mdi-maps-local-offer"></i>
+                        <p class="filtroTitulo">Categorias</p>     
+                    </div>
+                    <div class="checkboxFiltro">
+                        <input type="checkbox" class="filled-in" id="filled-in-box1"  />
+                        <label class="labelFiltro" for="filled-in-box1">Smartphones</label>
+                        <input type="checkbox" class="filled-in" id="filled-in-box2"  />
+                        <label class="labelFiltro" for="filled-in-box2">Celulares</label>
+                        <input type="checkbox" class="filled-in" id="filled-in-box3"  />
+                        <label class="labelFiltro" for="filled-in-box3">Acessórios</label>
+                        <input type="checkbox" class="filled-in" id="filled-in-box4"  />
+                        <label class="labelFiltro" for="filled-in-box4">Tablets</label>
+                    </div>
+                </div>
+                
+                <div class="filtroMarcas">
+                    <div class="filtroBoxTitulo">
+                        <i id="iconeFiltro" class="mdi-hardware-security"></i>
+                        <p class="filtroTitulo">Marcas</p>     
+                    </div>
+                    <div class="checkboxFiltro">
+                        <input type="checkbox" class="filled-in" id="filled-in-box1a"  />
+                        <label class="labelFiltro" for="filled-in-box1a">Motorola</label>
+                        <input type="checkbox" class="filled-in" id="filled-in-box2a"  />
+                        <label class="labelFiltro" for="filled-in-box2a">Samsung</label>
+                        <input type="checkbox" class="filled-in" id="filled-in-box3a"  />
+                        <label class="labelFiltro" for="filled-in-box3a">LG </label>
+                        <input type="checkbox" class="filled-in" id="filled-in-box4a"  />
+                        <label class="labelFiltro" for="filled-in-box4a">Positivo</label>
+                        <input type="checkbox" class="filled-in" id="filled-in-box5a"  />
+                        <label class="labelFiltro" for="filled-in-box5a">Sony</label>
+                        <input type="checkbox" class="filled-in" id="filled-in-box6a"  />
+                        <label class="labelFiltro" for="filled-in-box6a">Lenovo</label>
+                        <input type="checkbox" class="filled-in" id="filled-in-box7a"  />
+                        <label class="labelFiltro" for="filled-in-box7a">Microsoft</label>
+                        <input type="checkbox" class="filled-in" id="filled-in-box8a"  />
+                        <label class="labelFiltro" for="filled-in-box8a">Asus</label>
+                        <input type="checkbox" class="filled-in" id="filled-in-box9a"  />
+                        <label class="labelFiltro" for="filled-in-box9a">Nokia</label>
+                    </div>
+                </div>
+                
+                <div class="filtroRede">
+                    <div class="filtroBoxTitulo">
+                        <i id="iconeFiltro" class="mdi-device-network-wifi"></i>
+                        <p class="filtroTitulo">Rede</p>     
+                    </div>
+                    <div class="checkboxFiltro">
+                        <input type="checkbox" class="filled-in" id="filled-in-box1b"  />
+                        <label class="labelFiltro" for="filled-in-box1b">2G</label>
+                        <input type="checkbox" class="filled-in" id="filled-in-box2b"  />
+                        <label class="labelFiltro" for="filled-in-box2b">3G</label>
+                        <input type="checkbox" class="filled-in" id="filled-in-box3b"  />
+                        <label class="labelFiltro" for="filled-in-box3b">4G</label>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="produtosDireita">
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/lg-g-stylus-d690-branco.jpg" >
+                    <p class="smartTitulo">Smartphone LG G3 Stylus D690 Desbloqueado Branco</p>
+                    <p class="smartValor">R$ 689,90</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 57,50 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 620,91</span> no boleto</p>
+                </div>
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/lg-g3-stylus-d690-preto.jpg" >
+                    <p class="smartTitulo">Smartphone LG G3 Stylus D690 Desbloqueado Preto</p>
+                    <p class="smartValor">R$ 732,25</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 61,02 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 659,03</span> no boleto</p>
+                </div>
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/lg-g2-d695f-branco.jpg" >
+                    <p class="smartTitulo">Smartphone LG G2 Lite D295F Desbloqueado Branco/Preto</p>
+                    <p class="smartValor">R$ 500,00</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 41,66 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 450,00</span> no boleto</p>
+                </div>
+                
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/lg-l-prime-dourado.jpg" >
+                    <p class="smartTitulo">Smartphone LG L Prime D337 TV Digital Desbloqueado Dourado</p>
+                    <p class="smartValor">R$ 647,80</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 55,98 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 583,02</span> no boleto</p>
+                </div>
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/lg-l70-branco.jpg" >
+                    <p class="smartTitulo">Smartphone LG L70 Dual D325 Desbloqueado Branco</p>
+                    <p class="smartValor">R$ 498,05</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 41,50 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 448,24</span> no boleto</p>
+                </div>
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/vitrine-lg-l90-duos-d410-branco.jpg" >
+                    <p class="smartTitulo">Smartphone LG L90 Dual D410 Desbloqueado Branco</p>
+                    <p class="smartValor">R$ 604,32</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 50,36 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 543,88</span> no boleto</p>
+                </div>
+                
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/lg-l-prime-branco.jpg" >
+                    <p class="smartTitulo">Smartphone LG L Prime D337 TV Digital Desbloqueado Branco/Preto</p>
+                    <p class="smartValor">R$ 702,25</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 58,52 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 632,02</span> no boleto</p>
+                </div>
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/lg-prime-plus-tv-h502.jpg" >
+                    <p class="smartTitulo">Smartphone LG Prime Plus TV H502 Desbloqueado Dourado</p>
+                    <p class="smartValor">R$ 799,49</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 66,62 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 719,54</span> no boleto</p>
+                </div>
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/lg-volt-h422-branco.jpg" >
+                    <p class="smartTitulo">Smartphone LG Volt TV Dual H422 Desbloqueado Branco</p>
+                    <p class="smartValor">R$ 687,96</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 57,33 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 619,16</span> no boleto</p>
+                </div>
+                
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/lg-prime-plus-tv-h502-titanio.jpg" >
+                    <p class="smartTitulo">Smartphone LG Prime Plus TV H502 Desbloqueado Titanium</p>
+                    <p class="smartValor">R$ 804.58</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 67,04 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 724,12</span> no boleto</p>
+                </div>
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/lg-optimus-l5-e455-dual-preto.jpg" >
+                    <p class="smartTitulo">Smartphone LG Optimus L5 II Dual E455 Desbloqueado Preto</p>
+                    <p class="smartValor">R$ 397,89</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 33,15 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 358,10</span> no boleto</p>
+                </div>
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/design-lg-f60-d392.jpg" >
+                    <p class="smartTitulo">Smartphone LG F60 D392 Dual Desbloqueado Preto</p>
+                    <p class="smartValor">R$ 557,00</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 46,41 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 501,30</span> no boleto</p>
+                </div>
+                
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/lg-g4-marrom.jpg" >
+                    <p class="smartTitulo">Smartphone LG G4 H815P Desbloqueado Couro Marrom</p>
+                    <p class="smartValor">R$ 2.999,01</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 249,91 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 2.699,10</span> no boleto</p>
+                </div>
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/lg-g2-gold.jpg" >
+                    <p class="smartTitulo">Smartphone LG G2 Gold D805 Desbloqueado Gold</p>
+                    <p class="smartValor">R$ 1.587,89</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 132,32 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 1.429,10</span> no boleto</p>
+                </div>
+                <div class="smart">
+                    <img class="imagemSmart" src="imagens/LG/lg-optimus-g-e977.jpg" >
+                    <p class="smartTitulo">Smartphone LG Optimus G E977 Desbloqueado Preto</p>
+                    <p class="smartValor">R$ 1.097,25</p>
+                    <p class="smartNoCartao">12x de <span style="font-weight: bold">R$ 91,43 no cartão</span> (sem juros)</p>
+                    <p class="smartNoBoleto">ou <span style="color:green;font-size:0.9rem">R$ 987,52</span> no boleto</p>
+                </div>
+            </div>
+        </div>
+        <footer class="rodapeq">
+            <div class="rodape01">
+                <div class="centralizar_tud">
+                    <div class="TodosDepartamentos">
+                        <p class="receber_oferta_input_p">Todos os Departamentos</p>
+                        <p class="rodape_todos_departamentos_link" id="gamesRodape">&nbsp;&bull; Smartphones</p>
+                        <p class="rodape_todos_departamentos_link" id="lancamentosRodape">&nbsp;&bull; Celulares</p>
+                        <p class="rodape_todos_departamentos_link" id="ColecionaveisRodpe">&nbsp;&bull; Acessórios</p>
+                        
+                    </div>
+                    
+                    <div class="maisAcessados">
+                        <p class="receber_oferta_input_p">Mais Acessados</p>
+                        <p class="rodape_todos_departamentos_link">&nbsp;&bull; LG G3 Stylus D690 Preto</p>
+                        <p class="rodape_todos_departamentos_link">&nbsp;&bull; LG G4 H815P Titânio</p>
+                        <p class="rodape_todos_departamentos_link">&nbsp;&bull; Nokia Lumia 730 Dual Sim Preto</p>
+                        <p class="rodape_todos_departamentos_link">&nbsp;&bull; Microsoft Lumia 535 Dual Branco</p>
+                    </div>
+                    
+                    <div class="receber_oferta">
+                        <p class="receber_oferta_input_p">Receba Ofertas</p>
+                        <input name="receber_email" id="inputR" type="text" placeholder="e-mail" maxlength="60">
+                        <div class="receber_oferta_i"><i class="mdi-content-add-box"></i></div>
+                        <img id="skype" src="imagens/skype.png">
+                        <p class="skype_p">Skype</p>
+                        <div class="skype_p_caixa">
+                             <p class="skype_p_venda">vendas@housefone.com.br</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rodape02">
+                    <div class="centralizar_ate">
+                        <div class="rodapeAtendimento">
+                            <p id="rodape_font_padrao_titulo">Atendimento</p>
+                            <p class="rodape_duvida_link" id="comoComparRodape">&nbsp;&bull; Como Comprar</p>
+                            <p class="rodape_duvida_link" id="comoPagarRodape">&nbsp;&bull; Como Pagar</p>
+                            <p class="rodape_duvida_link" id="trocasDevolucoesRodape">&nbsp;&bull; Trocas e Devoluções</p>
+                            <p class="rodape_duvida_link" id="codigoDefesaConsumidorRodape">&nbsp;&bull; Código de Defesa do Consumidor</p>
+                            <p class="rodape_duvida_link" id="duvidasRodape">&nbsp;&bull; Dúvidas</p>
+                            <p class="rodape_duvida_link" id="vendasOnlineRodape">&nbsp;&bull; Vendas Online</p>
+                            <p class="rodape_duvida_link" id="politicasEntregaRodape">&nbsp;&bull; Políticas de Entrega</p>
+
+                            <p id="rodape_font_padrao_titulo">Institucional</p>
+                            <p class="rodape_duvida_link" id="empresaRodape">&nbsp;&bull; A Empresa</p>
+                        </div>
+                        <div class="formaPagamento">
+                            <p id="rodape_font_padrao_titulo">Formas de Pagamento</p>
+                            <img class="imgFormaPagamento" src="imagens/cartao.jpg">
+                        </div>
+                        
+                        <div class="redeSocial">
+                            <p id="rodape_font_padrao_titulo">Curta a Nossa Página</p>
+                            <p class="tituloFace">HOUSE</p>
+                            <p class="tituloFace2">FONE</p>
+                            <p class="houseFone">House Fone</p>
+                            <img class="imgFace" src="imagens/face.png">
+                        </div>
+                    </div>
+                    <div class="centralizar_fin">
+                        <p class="rodape_fin">HOUSE FONE / CNPJ: 07.339.047/0001-70 / Inscrição Estadual: 254.960.080 Endereço: Alameda Aristiliano Ramos, 271 - Rio do Sul, SC - 89160-000. O preço válido será o da finalização da compra. Vendas sujeitas a análise e confirmação de dados pela empresa. Atendimento ao cliente: atendimento@housefone.com.br</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+      
+    </body>
+</html>
+       

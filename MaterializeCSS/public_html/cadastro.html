@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <link rel="styleSheet" href="Estilo/cssPadrao.css" />
+        <link rel="icon" type="image/png" href="imagens/celu.ico" />
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    </head>
+
+    <body>
+        
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+      
+        <script>
+            $(document).ready(function(){
+                $("#skype").mouseover(function(){
+                    $(".skype_p_caixa").fadeIn("slow");
+                });
+                $("#skype").mouseout(function(){
+                    $(".skype_p_caixa").fadeOut("fast");
+                });
+            });
+        </script>
+        <nav>
+            <div id="navMenu" class="nav-wrapper">
+                <div class="menuCentro">
+                    <a href="index.html" id="brand" class="brand-logo">HOUSE FONE</a>
+                    <div class="boxPesquisa"></div>
+                    <div class="boxPesquisaComInput">
+                        <input class="pesquisa" type="text"><i id="iconePesquisa" class="mdi-action-search"></i>
+                    </div>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="smartphone.html">SMARTPHONES</a></li>
+                        <li><a href="smartphone.html">CELULARES</a></li>
+                        <li><a href="smartphone.html">ACESSÓRIOS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+         
+       
+        <div class="conteudoCadastro">
+            <div class="caixaIdentificacao">
+                <p class="tituloIdentificacao">IDENTIFICAÇÃO:</p>
+                <p class="bemVindoaHouse">Bem vindo a House Fone!</p>
+            </div>
+            
+            <div class="caixaIdentificaçãoEsquerda">
+                <p class="nao_cadastro">NÃO POSSUI CADASTRO?</p>
+                
+                <p id="tamanho_fonte">E-mail:</p>
+                <input id="email2" type="email" name="email" maxlength="60" required>
+                <a id="botao_cadastrar" class="waves-effect waves-light btn"  >CADASTRAR</a>
+            </div>
+            
+            <div class="caixaIdentificaçãoDireita">
+                <p class="nao_cadastro">JÁ POSSUI CADASTRO?</p>
+                <p id="tamanho_fonte">E-mail:</p>
+                <input id="email2" name="email_procurar" type="email" maxlength="60" required>
+                <p id="tamanho_fonte">Senha:</p>
+                <input id="email2"  type="password" required>
+                <p id="esqueci_senha">Esqueci a senha!</p>
+                 <a id="botao_cadastrar2" class="waves-effect waves-light btn"  >ENTRAR</a>
+            </div>
+            
+            
+        </div>
+        
+        <footer class="rodapel">
+            <div class="rodape01">
+                <div class="centralizar_tud">
+                    <div class="TodosDepartamentos">
+                        <p class="receber_oferta_input_p">Todos os Departamentos</p>
+                        <p class="rodape_todos_departamentos_link" id="gamesRodape">&nbsp;&bull; Smartphones</p>
+                        <p class="rodape_todos_departamentos_link" id="lancamentosRodape">&nbsp;&bull; Celulares</p>
+                        <p class="rodape_todos_departamentos_link" id="ColecionaveisRodpe">&nbsp;&bull; Acessórios</p>
+                        
+                    </div>
+                    
+                    <div class="maisAcessados">
+                        <p class="receber_oferta_input_p">Mais Acessados</p>
+                        <p class="rodape_todos_departamentos_link">&nbsp;&bull; LG G3 Stylus D690 Preto</p>
+                        <p class="rodape_todos_departamentos_link">&nbsp;&bull; LG G4 H815P Titânio</p>
+                        <p class="rodape_todos_departamentos_link">&nbsp;&bull; Nokia Lumia 730 Dual Sim Preto</p>
+                        <p class="rodape_todos_departamentos_link">&nbsp;&bull; Microsoft Lumia 535 Dual Branco</p>
+                    </div>
+                    
+                    <div class="receber_oferta">
+                        <p class="receber_oferta_input_p">Receba Ofertas</p>
+                        <input name="receber_email" id="inputR" type="text" placeholder="e-mail" maxlength="60">
+                        <div class="receber_oferta_i"><i class="mdi-content-add-box"></i></div>
+                        <img id="skype" src="imagens/skype.png">
+                        <p class="skype_p">Skype</p>
+                        <div class="skype_p_caixa">
+                             <p class="skype_p_venda">vendas@housefone.com.br</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rodape02">
+                    <div class="centralizar_ate">
+                        <div class="rodapeAtendimento">
+                            <p id="rodape_font_padrao_titulo">Atendimento</p>
+                            <p class="rodape_duvida_link" id="comoComparRodape">&nbsp;&bull; Como Comprar</p>
+                            <p class="rodape_duvida_link" id="comoPagarRodape">&nbsp;&bull; Como Pagar</p>
+                            <p class="rodape_duvida_link" id="trocasDevolucoesRodape">&nbsp;&bull; Trocas e Devoluções</p>
+                            <p class="rodape_duvida_link" id="codigoDefesaConsumidorRodape">&nbsp;&bull; Código de Defesa do Consumidor</p>
+                            <p class="rodape_duvida_link" id="duvidasRodape">&nbsp;&bull; Dúvidas</p>
+                            <p class="rodape_duvida_link" id="vendasOnlineRodape">&nbsp;&bull; Vendas Online</p>
+                            <p class="rodape_duvida_link" id="politicasEntregaRodape">&nbsp;&bull; Políticas de Entrega</p>
+
+                            <p id="rodape_font_padrao_titulo">Institucional</p>
+                            <p class="rodape_duvida_link" id="empresaRodape">&nbsp;&bull; A Empresa</p>
+                        </div>
+                        <div class="formaPagamento">
+                            <p id="rodape_font_padrao_titulo">Formas de Pagamento</p>
+                            <img class="imgFormaPagamento" src="imagens/cartao.jpg">
+                        </div>
+                        
+                        <div class="redeSocial">
+                            <p id="rodape_font_padrao_titulo">Curta a Nossa Página</p>
+                            <p class="tituloFace">HOUSE</p>
+                            <p class="tituloFace2">FONE</p>
+                            <p class="houseFone">House Fone</p>
+                            <img class="imgFace" src="imagens/face.png">
+                        </div>
+                    </div>
+                    <div class="centralizar_fin">
+                        <p class="rodape_fin">HOUSE FONE / CNPJ: 07.339.047/0001-70 / Inscrição Estadual: 254.960.080 Endereço: Alameda Aristiliano Ramos, 271 - Rio do Sul, SC - 89160-000. O preço válido será o da finalização da compra. Vendas sujeitas a análise e confirmação de dados pela empresa. Atendimento ao cliente: atendimento@housefone.com.br</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+      
+    </body>
+</html>
+       
